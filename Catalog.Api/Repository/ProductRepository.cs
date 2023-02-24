@@ -38,6 +38,7 @@ namespace Catalog.Api.Repository
         {
             FilterDefinition<Product> filter =
                Builders<Product>.Filter.Eq(p => p.Catagory, catagory);
+
             return await context.Products.Find(filter).ToListAsync();
         }
 

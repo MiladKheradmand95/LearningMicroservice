@@ -1,0 +1,41 @@
+name: dockercompose18038813268063971080
+services:
+  catalog.api:
+    build:
+      context: E:\Project\LearningAspMicrosetvice
+      dockerfile: Catalog.Api/Dockerfile
+    container_name: catalog.api
+    depends_on:
+      catalogdb:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      DataBaseSetting:ConnectionSrting: 'mongodb://catalogdb:27017 '
+    image: catalogapi
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "8000"
+      protocol: tcp
+  catalogdb:
+    container_name: catalogdb
+    image: mongo
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 27017
+      published: "27017"
+      protocol: tcp
+    restart: always
+    volumes:
+    - type: bind
+      source: E:\Project\LearningAspMicrosetvice\mongo_data
+      target: /data/db
+      bind:
+        create_host_path: true
+networks:
+  default:
+    name: dockercompose18038813268063971080_default
