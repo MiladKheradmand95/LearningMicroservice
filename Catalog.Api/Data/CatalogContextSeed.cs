@@ -31,7 +31,7 @@ namespace Catalog.Api.Data
             {
                 new Product()
                 {
-                    Id="61ca84a91c2022f0131d0a1f",
+                   Id="61ca84a91c2022f0131d0a1f",
                    Name= "I Phone X",
                    Description= " The I Phone X features a sleek design with a glass front and glass back," +
                    " both made with durable Corning glass, and a sturdy stainless steel frame. It boasts a stunning 5.8-inch Super Retina HD display with True Tone technology, " +
@@ -42,8 +42,8 @@ namespace Catalog.Api.Data
                    Summary="Also known as Apple iPhone 10 or Apple iPhone Ten," +
                    " the I Phone X is a top-of-the-line smartphone with impressive features and a modern design.",
                    ImageFile="product1.img",
-                    Price=950.50m,
-                    Catagory="Smart Phone"
+                   Price=950.50m,
+                   Catagory="Smart Phone"
                 },
                 new Product()
                 {
@@ -53,7 +53,7 @@ namespace Catalog.Api.Data
                     Summary=" The Galaxy A73 is a feature - packed smartphone with a large display, powerful processor, and versatile camera system, making it a great choice for anyone who wants a high - end device at an affordable price.",
                     ImageFile=" product1.img",
                     Price= 499.99m,
-                    Catagory=" Smart Phone"
+                    Catagory="Smart Phone"
                 },
                 new Product()
                 {
@@ -63,7 +63,7 @@ namespace Catalog.Api.Data
                     Summary=" The Galaxy A10 is an affordable smartphone that offers a good balance of features and performance, making it a great choice for anyone who wants a reliable device without breaking the bank.",
                     ImageFile=" product1.img",
                     Price= 149.99m,
-                   Catagory=" Smart Phone"
+                   Catagory="Smart Phone"
                 },
                 new Product()
                 {
@@ -73,7 +73,7 @@ namespace Catalog.Api.Data
                     Summary=" The Galaxy S20 is a premium smartphone that offers cutting-edge features and performance, making it a great choice for anyone who wants the best of the best.",
                     ImageFile=" product1.img",
                     Price= 999.99m,
-                    Catagory=" Smart Phone"
+                    Catagory="Smart Phone"
                 },
                 new Product()
                 {
@@ -83,7 +83,7 @@ namespace Catalog.Api.Data
                     Summary=" The Galaxy S23 is an eagerly awaited smartphone that is expected to offer top-of-the-line features and performance, making it a great choice for anyone who wants the latest and greatest technology.",
                     ImageFile=" product1.img",
                     Price= 999.99m,
-                    Catagory=" Smart Phone"
+                    Catagory="Smart Phone"
                 }
             };
         }
